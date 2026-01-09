@@ -51,7 +51,7 @@ const FormSplitBill = () => {
         <option value='friend'>{selectedFriend.name}</option>
       </select>
       <div className="sm:col-start-2 mt-4 flex justify-end">
-        <Button>Split Bill</Button>
+        <Button disabled={paidByUser > bill || paidByFriend > bill}>Split Bill</Button>
       </div>
     </form>
   );
